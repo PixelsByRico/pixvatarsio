@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixvatars</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <script src="./web3.min.js"></script>
+</head>
+
+<body ondragstart="return false">
+    <div class="mobile">
+        <h1>Sorry, but currently mobile version is turned off!</h1>
+        <p>Please come back on a larger screen</p>
+    </div>
+    <div class="not-mobile">
+        <div id="overlay" class="hidden">
+            <div id="full" class="about hidden">
+                <h2>About Pixvatars</h2>
+                <br>
+                <br>
+                <p>Pixvatars is a pfp NTF project inspired by my love for pixelart. I have created 1000 unique
+                    characters in 3 months. Each one hand drawn. My end goal is creating the game(s) and digital world I
+                    always wanted to. The avatars are useful for the Pixvatars Island Metaverse which is launching Q1
+                    2022. I got into pixelart again due to a challenge hosted by Pixelmap. That's how I got inspired to
+                    do it on chain and see how far I can go with only 16x16 pixels. Pixelmap owners got early Whitelist
+                    access.</p>
+                <br>
+                <br>
+                <br>
+                <h3>There's a few "easter eggs" + rarities added:</p>
+                    <br>
+                    <p>1. Jewelery + Accessories. On the Islands there is going to be 2 main resources: Coconuts and
+                        Golden nuggets. Having an avatar with jewelry will give you benefits for the gold resources on
+                        the Island</p>
+                    <br>
+                    <p>2. Families. Within the 1000 pieces there's a few forming families. Owning a family will add some
+                        priveleges with the Island opening in 2022. And might get you a personal gift by the creator
+                        *wink*</p>
+                    <br>
+                    <p>3. Backgrounds. Each avatar has a background. There's Common, Rare and Unique backgrounds.</p>
+                    <br>
+                    <br>
+                    <p>🥥Mint Price: 0.05ETH</p>
+                    <p>🥥Max 5 per wallet</p>
+                    <p>🥥3 MINT BONUS: 1x $COCONUT</p>
+                    <p>🥥5 MINT BONUS: 1x $COCONUT + 1x $GOLDNUGGET</p>
+                    <br>
+                    <p>BONUS: Pixvatars is the first NFT to show in a pixelmap.io house tile (coming Q1 2022) </p>
+            </div>
+            <div id="roadmap" class="roadmap hidden">
+                <h2>Pixvatars Roadmap</h2>
+                <br><br>
+                <p>PRE-LAUNCH <br><br>
+                    💚 Whitelist opening <br>
+                    》Website Reveal <br>
+                    💚 Smart contract audit <br>
+                    <br><br><br>
+                    MINT <br><br>
+                    》Whitelist pre-sale <br>
+                    》Public sale <br>
+                    》Reveal Event <br>
+                    <br><br><br>
+                    Q1 2022 <br><br>
+                    》Opening of Pixel Island (Metaverse) <br>
+                    》Pixvatars Content Creation <br>
+                    》Introduction of Tokenomics <br>
+                    <br><br><br>
+                    No exact date <br><br>
+                    》Partner with other projects => First one is Pixelmap.io <br>
+                    》Pixel Island Mystery Contest <br>
+                </p>
+            </div>
+        </div>
+        <main>
+
+            <div class="connect">
+                <img src="./images/button-export.png" alt="" id="loginButton">
+                <p id="userWallet"></p>
+            </div>
+            <section class="glass">
+                <div class="dashboard">
+                    <div class="user">
+                        <img src="./images/logo-small.png" alt="" width="225" />
+                        <h3>pixvatars.eth</h3>
+                    </div>
+
+                    <div class="navigation">
+                        <div class="link">
+                            <a href="#">
+                                <h2>Previews</h2>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a id="about" href="#">
+                                <h2>About</h2>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a id="roadmapBtn" href="#">
+                                <h2>Roadmap</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="links">
+                        <!-- <div class="link disabled">
+                        <a href="https://twitch.tv/pixvatars">
+
+                            <h2>Twitch</h2>
+                        </a>
+                    </div> -->
+                        <div class="link">
+                            <a href="https://twitter.com/pixvatars" target="_blank">
+
+                                <h2>Twitter</h2>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="https://discord.gg/pixvatars">
+
+                                <h2>Discord</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <img id="playbutton" src="./images/button.png" alt="">
+                </div>
+                <div class="games">
+                    <div id="game" class="hidden">
+                        <h3>You are EARLY EARLY, Pixverse Coming Soon!</h3>
+                        <!-- <div class="game-container">
+                        <canvas class="game-canvas" width="469" height="264"></canvas>
+                    </div> -->
+
+                        <!-- Scripts -->
+                        <script src="/utils.js"></script>
+                        <script src="/KeyPress.js"></script>
+                        <script src="/DirectionInput.js"></script>
+                        <script src="/TextMessage.js"></script>
+                        <script src="/Overworld.js"></script>
+                        <script src="/GameObject.js"></script>
+                        <script src="/Person.js"></script>
+                        <script src="/Sprite.js"></script>
+                        <script src="/OverworldMap.js"></script>
+                        <script src="/OverworldEvent.js"></script>
+                        <script src="/init.js"></script>
+                    </div>
+                    <div id="home">
+                        <div class="status">
+                            <h1>Current Stats</h1>
+
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="./images/sqrl1.gif" alt="">
+                                <div class="card-info">
+                                    <h2>0/950 Minted</h2>
+                                    <div class="progress"></div>
+                                </div>
+                                <h2 class="percentage">0%</h2>
+                            </div>
+                            <div class="card">
+                                <img src="./images/BOX.png" alt="" width="96">
+                                <div class="card-info">
+                                    <h2>0/45 Promotional</h2>
+                                    <div class="progress"></div>
+                                </div>
+                                <h2 class="percentage">0%</h2>
+                            </div>
+                            <h2 id="team-h2">The Team</h2>
+                            <div class="team-card">
+                                <div class="team-card-info">
+                                    <img src="./images/goldearringlion.png" alt="">
+                                    <p>byrico.eth</p>
+                                    <p>Pixvatars Creator & Pixel Artist</p>
+                                </div>
+                                <div class="team-card-info">
+                                    <img src="./images/ladyk.png" alt="">
+                                    <p>LadyNFT </p>
+                                    <p>Pixvatars Queen & Moderator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    <script>
+        window.userWalletAddress = null;
+        const loginButton = document.getElementById('loginButton')
+        const userWallet = document.getElementById('userWallet')
+
+        let provider;
+        let signer;
+        let signerAddress;
+
+        let tokenContract;
+        let userTokenBalance;
+
+        function toggleButton() {
+            if (!window.ethereum) {
+                loginButton.innerText = "Metamask not installed";
+                loginButton.classList.add('hidden');
+                return false;
+            }
+            loginButton.addEventListener('click', loginWithMetaMask);
+        }
+
+        async function loginWithMetaMask() {
+            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+                .catch((e) => {
+                    console.error(e.message)
+                })
+            if (!accounts) {
+                return
+            }
+            const account = accounts[0];
+            window.userWalletAddress = account;
+            userWallet.innerText = window.userWalletAddress;
+
+            loginButton.setAttribute('src', './images/pressed.png');
+
+            loginButton.removeEventListener('click', loginWithMetaMask);
+            setTimeout(() => {
+
+            }, 700)
+            loginButton.addEventListener('click', signOutOfMetaMask);
+
+        }
+
+        function signOutOfMetaMask() {
+            window.userWalletAddress = null;
+            userWallet.innerHTML = '';
+            loginButton.setAttribute('src', './images/button-export.png');
+            loginButton.addEventListener('click', loginWithMetaMask);
+
+
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            toggleButton();
+        });
+    </script>
+    <script>
+        document.getElementById('playbutton').addEventListener('click', function (e) {
+            if (document.getElementById('playbutton').getAttribute('src') == "./images/button.png") {
+                document.getElementById('playbutton').setAttribute('src', './images/pressed.png');
+                document.getElementById('home').classList.add('hidden');
+                document.getElementById('game').classList.remove('hidden');
+            } else {
+                document.getElementById('playbutton').setAttribute('src', './images/button.png');
+                document.getElementById('game').classList.add('hidden');
+                document.getElementById('home').classList.remove('hidden');
+
+            }
+        });
+
+        document.getElementById('overlay').addEventListener('click', function (e) {
+            document.getElementById('full').classList.add('hidden');
+            document.getElementById('roadmap').classList.add('hidden');
+            document.getElementById('overlay').classList.add('hidden');
+        });
+
+        document.getElementById('about').addEventListener('click', function (e) {
+            document.getElementById('full').classList.remove('hidden');
+            document.getElementById('overlay').classList.remove('hidden');
+        });
+
+        document.getElementById('roadmapBtn').addEventListener('click', function (e) {
+            document.getElementById('roadmap').classList.remove('hidden');
+            document.getElementById('overlay').classList.remove('hidden');
+        });
+    </script>
+</body>
+
+</html>
